@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 180px;
+}
+
+.search_bar {
+  position: relative;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.search_bar input {
+     height: 40px;
+     width: 30%;
+     font-size: 14px;
+}
+
+.search_buttons {
+  position: relative;
+  margin-top: 2%;
+  text-align: center;
+  display: block;
+}
+
+.search_buttons input {
+  background-color: #f1f1f1;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #787878;
+  font-family: arial,sans-serif;
+  height: 20px;
+}
+
+.button1:hover input {
+  background-color: #F8F8F8;
+  border: 1px solid black;
+}
+
+.button2:hover input {
+  background-color: #F8F8F8;
+  border: 1px solid black;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  background-color: #f1f1f1;
+}
+
+.left_side {
+  float: left;
+  text-align: left;
+}
+
+.right_side {
+  float: right;
+  text-align: right;
+}
+
+.left_side a {
+  padding: 0px 10px;
+  color : #585858;
+  text-decoration: none;
+  font-size: 18px !important;
+}
+
+.right_side a {
+  padding: 0px 10px;
+  color : #585858;
+  text-decoration: none;
+  font-size: 18px !important;
+}
+
+.left_side a:hover {
+  text-decoration: underline;
+}
+
+.right_side a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  position: absolute;
+  padding: 10px 30px;
+  top: 0;
+  right: 0;
+}
+
+.header a{
+  color: #585858;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.sign_in {
+  display: inline-block;
+  background-color: #668cff;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+}
