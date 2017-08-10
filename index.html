@@ -2,7 +2,15 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="index.css"></link>
-    <title>google_homepage</title>
+    <title>Google</title>
+    <script>
+      function search () {
+        var s = document.getElementById("oursearch").value;
+        var url = "http://www.google.com/search?q=" + s;
+        window.location.assign (url);
+        return false;
+      }
+    </script>
 </head>
 <body>
     <div class="header">
@@ -11,16 +19,21 @@
         <a href="#"><img src="images/google_apps.png" alt="Apps" height="15px";/></a>
         <a class="sign_in"><input class="sign_in" type="button" value="Sign in"/ style="height:30px;"></a>
     </div>
+    <div>
+      <form name="ourform" onsubmit=" return search()">
     <div class="image">
         <img src="images/google_logo.png" alt="Google" height="93"/>
         <div class="search_bar">
-              <input type="text" name="search" placeholder="Search Google or type URL"/>
+              <input type="text" id="oursearch" placeholder="Search Google or type URL"/>
         </div>
     </div>
     <div class="search_buttons">
-        <a class="button1"><input type="button" value="Google Search"/ style="height:30px;"></a>
-        <a class="button2"><input type="button" value="I'm Feeling Lucky" style="height:30px"/></a>
+
+          <a class="button1"><input type="button" value="Google Search" onClick="search()" style="height:30px;"></a>
+          <a class="button2"><input type="button" value="I'm Feeling Lucky" style="height:30px"/></a>
+        </form>
     </div>
+  </div>
     <div class="footer">
         <div class="left_side">
             <a href="#">Advertising</a>
